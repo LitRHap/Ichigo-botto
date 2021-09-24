@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
             dm: true,
-            aliases: ['menu']
+            aliases: ['h']
         })
     }
 
@@ -40,7 +40,7 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void M.reply( await request.buffer('https://wallpapercave.com/wp/wp5955135.jpg'),  
+            return void M.reply( await request.buffer('https://images6.alphacoders.com/903/903824.png'),  
                                 MessageType.image,            
                                 undefined,
                                 undefined,
