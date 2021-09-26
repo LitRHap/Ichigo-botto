@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://ibb.co/wQ4GK21"><img src="https://i.ibb.co/HPqwr9Q/whatsapp-botto-void-init.png" alt="whatsapp-botto-void-init" border="0"></a>
+<a href="https://ibb.co/wQ4GK21"><img src="https://images6.alphacoders.com/931/931215.png" alt="whatsapp-botto-void-init" border="0"></a>
 
 # **Kaoi : Next Level Void WhatsApp BOTTO**
 [![CodeFactor](https://www.codefactor.io/repository/github/prajjwaldatir/kaoi/badge)](https://www.codefactor.io/repository/github/prajjwaldatir/kaoi)
@@ -10,7 +10,7 @@
   Button : If you are deploying normally
 
   
-  [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/prathrdp/ichigo-test/blob/main)
+  [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/prathrdp/Ichigo/blob/main)
 
   Button : If you are deploying from a fork
   
