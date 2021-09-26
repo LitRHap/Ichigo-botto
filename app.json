@@ -11,9 +11,9 @@
       "whatsapp-sticker-bot",
       "whatsapp-botto"
     ],
-    "website": "https://github.com/PrajjwalDatir/Kaoi#readme",
-    "repository": "https://github.com/PrajjwalDatir/Kaoi.git",
-    "logo": "https://avatars.githubusercontent.com/u/46681482?v=4",
+    "website": "https://github.com/prathrdp/Ichigo-botto#readme",
+    "repository": "https://github.com/prathrdp/Ichigo-botto.git",
+    "logo": "https://images6.alphacoders.com/903/903824.png",
     "success_url": "/",
     "env": {
       "PREFIX": {
