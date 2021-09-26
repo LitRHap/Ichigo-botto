@@ -25,7 +25,7 @@ return void M.reply(await request.buffer('https://www.pngarea.com/pngm/88/694736
 MessageType.image,
             undefined,
             undefined,
-           `*Did you mean : $help*`
+           `*Did you mean : €help*`
 
 
 )
