@@ -38,7 +38,13 @@ export default class Command extends BaseCommand {
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
             return void M.reply(
-                `${text} 🗃️ *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
+                `${text} 🗃️ *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,contextInfo:{externalAdReply: {
+                        title: `Ichigo Bot`,
+                        body: `Command List`,
+                        mediaType: 2,
+                        thumbnailUrl: `https://i.ytimg.com/vi/${audio.id}/hqdefault.jpg`,
+                        
+                    }}
             )
         }
         const key = parsedArgs.joined.toLowerCase()
