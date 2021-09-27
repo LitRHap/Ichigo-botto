@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
 
 
 return void M.reply(wait this.GIFBufferToVideoBuffer(
-                    await request.buffer('https://www.pngarea.com/pngm/88/6947367_ichigo-png-ichigo-darling-in-the-franxx-png.png')
+                    await request.buffer('https://c.tenor.com/LtTgb4O_hjMAAAAC/darling-in-the-franxx-anime.gif')
         ),
 MessageType.video,
 MimeType.gif,      
