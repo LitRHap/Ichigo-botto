@@ -40,16 +40,10 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void M.reply( 
+            return void M.reply( await request.buffer('https://media.giphy.com/media/CktDRAS54pAcM/giphy-downsized.gif?cid=ecf05e4746k1wt97bvwclm8c2xo0nv840j9q98lyefnfeet1&rid=giphy-downsized.gif&ct=g'),  MessageType.video,MimetType.gif            undefined,
+            undefined,
 
-                `${text} 🗃️ *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,{contextInfo: {
-                    externalAdReply: {
-                        title:`Ichigo Bot`,
-                        body: `Help List`,
-                        thumbnailUrl: `https://images6.alphacoders.com/931/931215.png`,
-                      } 
-                    }
-                }
+                `${text} 🗃️ *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
             )
         }
         const key = parsedArgs.joined.toLowerCase()
