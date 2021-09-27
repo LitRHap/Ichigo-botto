@@ -1,9 +1,6 @@
 import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
-import request from '../../lib/request'
-import { MessageType } from '@adiwajshing/baileys'
-
 import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
 
 export default class Command extends BaseCommand {
@@ -32,7 +29,7 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-            let text = `👾 Ichigo's Command List* 👾\n\n`
+            let text = `🎫 *${this.client.config.name} Command List* 🎫\n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}*\n❐ \`\`\`${categories[
@@ -40,9 +37,7 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void M.reply( await request.buffer('https://c.tenor.com/LtTgb4O_hjMAAAAC/darling-in-the-franxx-anime.gif'),  MessageType.video,MimeType.gif,            undefined,
-            undefined,
-
+            return void M.reply(
                 `${text} 🗃️ *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
             )
         }
