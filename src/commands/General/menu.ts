@@ -21,9 +21,8 @@ export default class Command extends BaseCommand {
 
 
 
-return void M.reply(await request.buffer('https://c.tenor.com/LtTgb4O_hjMAAAAC/darling-in-the-franxx-anime.gif'),
-MessageType.image,
-Mimetype.gif,                    
-            undefined,
-            undefined,
-           `*Did you mean : €help*`
+return void M.reply(wait this.GIFBufferToVideoBuffer(
+                await this.client.getBuffer('https://c.tenor.com/LtTgb4O_hjMAAAAC/darling-in-the-franxx-anime.gif' )
+            ),
+            MessageType.video,
+            Mimetype.gif,
