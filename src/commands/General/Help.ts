@@ -40,10 +40,16 @@ export default class Command extends BaseCommand {
                 ]
                     .map((command) => command.config?.command)
                     .join(', ')}\`\`\`\n\n`
-            return void M.reply( await request.buffer('https://images6.alphacoders.com/931/931215.png'),  MessageType.image,            undefined,
-            undefined,
+            return void M.reply( 
 
-                `${text} 🗃️ *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`
+                `${text} 🗃️ *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*`,contextInfo: {
+                    externalAdReply: {
+                        title:`Ichigo Bot`,
+                        body: `Help List`,
+                        thumbnailUrl: `https://images6.alphacoders.com/931/931215.png`,
+                        
+                    }
+                }
             )
         }
         const key = parsedArgs.joined.toLowerCase()
