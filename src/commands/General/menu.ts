@@ -27,3 +27,5 @@ return void M.reply(wait this.GIFBufferToVideoBuffer(
             MessageType.video,
             Mimetype.gif,
              `Did you mean help`)
+    }
+}
