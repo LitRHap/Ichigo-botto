@@ -21,8 +21,11 @@ export default class Command extends BaseCommand {
 
 
 
-return void M.reply(await request.buffer('https://www.pngarea.com/pngm/88/6947367_ichigo-png-ichigo-darling-in-the-franxx-png.png'),
-MessageType.image,
+return void M.reply(wait this.GIFBufferToVideoBuffer(
+                    await request.buffer('https://www.pngarea.com/pngm/88/6947367_ichigo-png-ichigo-darling-in-the-franxx-png.png')
+        ),
+MessageType.video,
+MimeType.gif,      
             undefined,
             undefined,
            `*Did you mean : €help*`
