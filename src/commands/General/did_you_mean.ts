@@ -1,44 +1,23 @@
-import { MessageType, Mimetype } from '@adiwajshing/baileys'
-import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { ISimplifiedMessage } from '../../typings'
-import { tmpdir } from 'os'
-import { exec } from 'child_process'
-import { readFile, unlink, writeFile } from 'fs/promises'
-import { promisify } from 'util'
 
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'menu',
-            description: 'Give the Ultra Hug to someone special',
-            category: 'general',
-            usage: `${client.config.prefix}ultrahug [tag/quote users]`
+            command: '',
         })
     }
-    exec = promisify(exec)
 
-    GIFBufferToVideoBuffer = async (image: Buffer): Promise<Buffer> => {
-        const filename = `${tmpdir()}/${Math.random().toString(36)}`
-        await writeFile(`${filename}.gif`, image)
-        await this.exec(
-            `ffmpeg -f gif -i ${filename}.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ${filename}.mp4`
-        )
-        const buffer = await readFile(`${filename}.mp4`)
-        Promise.all([unlink(`${filename}.mp4`), unlink(`${filename}.gif`)])
-        return buffer
-    }
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        if (M.quoted?.sender) M.mentioned.push(M.quoted.sender)
-        if (!M.mentioned.length) M.mentioned.push(M.sender.jid)
-        M.reply(
-            await this.GIFBufferToVideoBuffer(
-                await this.client.getBuffer('https://c.tenor.com/LtTgb4O_hjMAAAAC/darling-in-the-franxx-anime.gif'),
-            MessageType.video,
-            Mimetype.gif,
-            `did you mean help?`
+        const n = [
+            './assets/images/ichi/imchi.mp4'
+        ]
+        let chitoge = n[Math.floor(Math.random() * n.length)]
+        return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
+            mimetype: Mimetype.gif,
+            caption: `Do you mean *${this.client.config.prefix}help*? \n` }
         )
     }
 }
-
+          
