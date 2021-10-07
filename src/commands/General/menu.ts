@@ -105,7 +105,7 @@ Use =help <command_name> to view the command info
 `
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption:mn,quoted:M }
+            caption:mn }
         )
     }
 }
