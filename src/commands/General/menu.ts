@@ -8,7 +8,7 @@ import { ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: '',
+            command: 'help',
         })
     }
 
@@ -18,20 +18,22 @@ export default class Command extends BaseCommand {
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         const mn=`
-🪆Konichiwa! I'm *Ichigo*
+🪆Konichiwa! *${M.sender.username}* , I'm *Ichigo*
+
+I hope you will Enjoy using my commands....
 
 📜Here are the listed commands : -
 
 🎊 *FUN* 🎊
 
 🔖 ғᴀᴄᴛ        🔖 ǫᴜᴏᴛᴇ
-🔖 ғǫᴜᴏᴛᴇ    🔖 ᴡʜʏ
+🔖 ғǫᴜᴏᴛᴇ      🔖 ᴡʜʏ
 🔖 ᴊᴏᴋᴇ        🔖 ᴛʀɪɢɢᴇʀ
 
 ⛩️ *WEEB* ⛩️
 
-🏷 ᴡᴀɪғᴜ             🏷️ ɴᴇᴋᴏ
-🏷️ ᴀɴɪᴍᴇ-ʟɪɴᴇ    🏷️ ʟᴏʟɪ
+🏷️ᴡᴀɪғᴜ            🏷️ ɴᴇᴋᴏ
+🏷️ ᴀɴɪᴍᴇ-ʟɪɴᴇ      🏷️ ʟᴏʟɪ
 🏷️ ʀᴘᴀᴘᴇʀ          🏷️ ᴋɪᴛsᴜɴᴇ
 🏷️ ᴍᴇɢᴜᴍɪᴘᴀᴘᴇʀ
 🏷️ ʜᴜsʙᴀɴᴅʀᴏ
@@ -39,51 +41,51 @@ export default class Command extends BaseCommand {
 
 🎐 *GENERAL* 🎐
 
-🔷 ᴀᴅᴍɪɴs        🔷 ᴅᴇʟᴇᴛᴇ
-🔷 ᴇᴠᴇʀʏᴏɴᴇ     🔷 ᴍᴏᴅs
+🔷 ᴀᴅᴍɪɴs         🔷 ᴅᴇʟᴇᴛᴇ
+🔷 ᴇᴠᴇʀʏᴏɴᴇ       🔷 ᴍᴏᴅs
 🔷 ᴘʀᴏғɪʟᴇ        🔷 xᴘ
 
 
 🎼 *MEDIA* 🎼
 
 🎶 ʟʏʀɪᴄs      🎶 sᴘᴏᴛɪғʏ
-🎶 ʏᴛᴀ           🎶 ʏᴛᴠ
-🎶 ʏᴛs           🎶 ᴘʟᴀʏ
+🎶 ʏᴛᴀ         🎶 ʏᴛᴠ
+🎶 ʏᴛs         🎶 ᴘʟᴀʏ
 🎶 ᴘʟᴀʏᴠ
 
 📃 *MISC* 📃
 
-⛓️ ʜɪ         ⛓️ ᴋᴀᴏɪ
-⛓️ ᴠᴏɪᴅ     ⛓️ ʀᴇᴛʀɪᴇᴠᴇ
+⛓️ ʜɪ          ⛓️ ʀᴇᴛʀɪᴇᴠᴇ
+⛓️ ᴠᴏɪᴅ      
 
 📯 *MODERATION* 📯
 
 📍ᴀᴄᴛɪᴠᴀᴛᴇ      📍ᴄʟᴏsᴇ
-📍ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇ  📍ᴏᴘᴇɴ
+📍ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇ    📍ᴏᴘᴇɴ
 📍ᴅᴇᴍᴏᴛᴇ        📍ᴘᴜʀɢᴇ
-📍ᴘʀᴏᴍᴏᴛᴇ     📍ʀᴇᴍᴏᴠᴇ
+📍ᴘʀᴏᴍᴏᴛᴇ       📍ʀᴇᴍᴏᴠᴇ
 
 ⚠️ *NSFW* ⚠️
 
 🀄 ʙʟᴏᴡᴊᴏʙ    🀄ɴsғᴡᴊᴏᴋᴇ
-🀄 ɴsғᴡ-ɴᴇᴋᴏ 🀄ᴛʀᴀᴘ
+🀄 ɴsғᴡ-ɴᴇᴋᴏ  🀄ᴛʀᴀᴘ
 🀄 ɴsғᴡ-ᴡᴀɪғᴜ
 
 🎭 *REACTIONS* 🎭
 
-🎗️ ʙɪᴛᴇ              🎗️ ʜɪɢʜғɪᴠᴇ
-🎗️ ʙʟᴜsʜ          🎗️ sᴍᴜɢ
-🎗️ ʙᴏɴᴋ            🎗️ ʜᴜɢ
-🎗️ ʙᴜʟʟʏ           🎗️ ᴋɪᴄᴋ
-🎗️ ᴄʀɪɴɢᴇ         🎗️ ᴋɪʟʟ
-🎗️ ᴄʀʏ               🎗️ ᴋɪss
-🎗️ ᴄᴜᴅᴅʟᴇ        🎗️ ʟɪᴄᴋ
-🎗️ ᴅᴀɴᴄᴇ          🎗️ ᴘᴀᴛ
-🎗️ ᴇᴀᴛ               🎗️ ᴘᴏᴋᴇ
-🎗️ ʜᴀɴᴅʜᴏʟᴅ   🎗️ sʟᴀᴘ
-🎗️ ʜᴀᴘᴘʏ          🎗️ sᴍɪʟᴇ
-🎗️ ᴜʟᴛʀᴀʜᴜɢ   🎗️ ᴡᴀᴠᴇ
-🎗️ ᴡɪɴᴋ            🎗️ ʏᴇᴇᴛ
+🎗️ ʙɪᴛᴇ        🎗️ ʜɪɢʜғɪᴠᴇ
+🎗️ ʙʟᴜsʜ       🎗️ sᴍᴜɢ
+🎗️ ʙᴏɴᴋ        🎗️ ʜᴜɢ
+🎗️ ʙᴜʟʟʏ       🎗️ ᴋɪᴄᴋ
+🎗️ ᴄʀɪɴɢᴇ      🎗️ ᴋɪʟʟ
+🎗️ ᴄʀʏ         🎗️ ᴋɪss
+🎗️ ᴄᴜᴅᴅʟᴇ      🎗️ ʟɪᴄᴋ
+🎗️ ᴅᴀɴᴄᴇ       🎗️ ᴘᴀᴛ
+🎗️ ᴇᴀᴛ         🎗️ ᴘᴏᴋᴇ
+🎗️ ʜᴀɴᴅʜᴏʟᴅ    🎗️ sʟᴀᴘ
+🎗️ ʜᴀᴘᴘʏ       🎗️ sᴍɪʟᴇ
+🎗️ ᴜʟᴛʀᴀʜᴜɢ    🎗️ ᴡᴀᴠᴇ
+🎗️ ᴡɪɴᴋ        🎗️ ʏᴇᴇᴛ
 
 🪦 *UTILS* 🪦
 
