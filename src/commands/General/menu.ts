@@ -88,8 +88,10 @@ I hope you will Enjoy using my commands....
 
 ⚠️ *NSFW* ⚠️
 
-🀄 ʙʟᴏᴡᴊᴏʙ    🀄ɴsғᴡᴊᴏᴋᴇ
-🀄 ɴsғᴡ-ɴᴇᴋᴏ  🀄ᴛʀᴀᴘ
+🀄 ʙʟᴏᴡᴊᴏʙ    
+🀄ɴsғᴡᴊᴏᴋᴇ
+🀄 ɴsғᴡ-ɴᴇᴋᴏ  
+🀄ᴛʀᴀᴘ
 🀄 ɴsғᴡ-ᴡᴀɪғᴜ
 
 🎭 *REACTIONS* 🎭
