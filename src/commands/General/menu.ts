@@ -14,12 +14,89 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/images/ichi/imchi.mp4'
+            './assets/images/ichi/ichigo.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
+        const mn=`
+🪆Konichiwa! I'm *Ichigo*
+
+📜Here are the listed commands : -
+
+🎊 *FUN* 🎊
+
+🔖 ғᴀᴄᴛ        🔖 ǫᴜᴏᴛᴇ
+🔖 ғǫᴜᴏᴛᴇ    🔖 ᴡʜʏ
+🔖 ᴊᴏᴋᴇ        🔖 ᴛʀɪɢɢᴇʀ
+
+⛩️ *WEEB* ⛩️
+
+🏷 ᴡᴀɪғᴜ             🏷️ ɴᴇᴋᴏ
+🏷️ ᴀɴɪᴍᴇ-ʟɪɴᴇ    🏷️ ʟᴏʟɪ
+🏷️ ʀᴘᴀᴘᴇʀ          🏷️ ᴋɪᴛsᴜɴᴇ
+🏷️ ᴍᴇɢᴜᴍɪᴘᴀᴘᴇʀ
+🏷️ ʜᴜsʙᴀɴᴅʀᴏ
+🏷️ sʜɪɴᴏʙᴜ-ᴘᴀᴘᴇʀ
+
+🎐 *GENERAL* 🎐
+
+🔷 ᴀᴅᴍɪɴs        🔷 ᴅᴇʟᴇᴛᴇ
+🔷 ᴇᴠᴇʀʏᴏɴᴇ     🔷 ᴍᴏᴅs
+🔷 ᴘʀᴏғɪʟᴇ        🔷 xᴘ
+
+
+🎼 *MEDIA* 🎼
+
+🎶 ʟʏʀɪᴄs      🎶 sᴘᴏᴛɪғʏ
+🎶 ʏᴛᴀ           🎶 ʏᴛᴠ
+🎶 ʏᴛs           🎶 ᴘʟᴀʏ
+🎶 ᴘʟᴀʏᴠ
+
+📃 *MISC* 📃
+
+⛓️ ʜɪ         ⛓️ ᴋᴀᴏɪ
+⛓️ ᴠᴏɪᴅ     ⛓️ ʀᴇᴛʀɪᴇᴠᴇ
+
+📯 *MODERATION* 📯
+
+📍ᴀᴄᴛɪᴠᴀᴛᴇ      📍ᴄʟᴏsᴇ
+📍ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇ  📍ᴏᴘᴇɴ
+📍ᴅᴇᴍᴏᴛᴇ        📍ᴘᴜʀɢᴇ
+📍ᴘʀᴏᴍᴏᴛᴇ     📍ʀᴇᴍᴏᴠᴇ
+
+⚠️ *NSFW* ⚠️
+
+🀄 ʙʟᴏᴡᴊᴏʙ    🀄ɴsғᴡᴊᴏᴋᴇ
+🀄 ɴsғᴡ-ɴᴇᴋᴏ 🀄ᴛʀᴀᴘ
+🀄 ɴsғᴡ-ᴡᴀɪғᴜ
+
+🎭 *REACTIONS* 🎭
+
+🎗️ ʙɪᴛᴇ              🎗️ ʜɪɢʜғɪᴠᴇ
+🎗️ ʙʟᴜsʜ          🎗️ sᴍᴜɢ
+🎗️ ʙᴏɴᴋ            🎗️ ʜᴜɢ
+🎗️ ʙᴜʟʟʏ           🎗️ ᴋɪᴄᴋ
+🎗️ ᴄʀɪɴɢᴇ         🎗️ ᴋɪʟʟ
+🎗️ ᴄʀʏ               🎗️ ᴋɪss
+🎗️ ᴄᴜᴅᴅʟᴇ        🎗️ ʟɪᴄᴋ
+🎗️ ᴅᴀɴᴄᴇ          🎗️ ᴘᴀᴛ
+🎗️ ᴇᴀᴛ               🎗️ ᴘᴏᴋᴇ
+🎗️ ʜᴀɴᴅʜᴏʟᴅ   🎗️ sʟᴀᴘ
+🎗️ ʜᴀᴘᴘʏ          🎗️ sᴍɪʟᴇ
+🎗️ ᴜʟᴛʀᴀʜᴜɢ   🎗️ ᴡᴀᴠᴇ
+🎗️ ᴡɪɴᴋ            🎗️ ʏᴇᴇᴛ
+
+🪦 *UTILS* 🪦
+
+⏳ ʙʟᴜʀ    ⏳ sᴛɪᴄᴋᴇʀ
+⏳ sᴛᴇᴀʟ   ⏳ sᴜʙʀᴇᴅ
+
+📧 *NOTE*  📧
+
+Use =help <command_name> to view the command info
+`
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: `Do you mean *${this.client.config.prefix}help*? \n` }
+            caption:mn,qouted:M }
         )
     }
 }
