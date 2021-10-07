@@ -99,6 +99,9 @@ I hope you will Enjoy using my commands....
 📧 *NOTE*  📧
 
 Use =help <command_name> to view the command info
+
+
+𝐈𝐜𝐡𝐢𝐠𝐨-𝐁𝐨𝐭𝐭𝐨 ©
 `
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
             mimetype: Mimetype.gif,
