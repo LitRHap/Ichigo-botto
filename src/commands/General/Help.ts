@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'menu',
-            description: 'Displays the help menu or shows the info of the command provided',
+            description: 'Displays the latest command list',
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
             aliases: ['m']
@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            './assets/images/ichi/imchi2.mp4'
+            './assets/images/ichi/ichigo.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
