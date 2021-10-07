@@ -18,11 +18,11 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/images/ichi/ichigo.mp4'
+            './assets/images/ichi/nezuko2.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         const mn=`
-🪆Konichiwa! *${M.sender.username}* , I'm *Ichigo*
+🪆Konichiwa! *${M.sender.username}* , I'm *Nezuko*
 
 I hope you will Enjoy using my commands....
 
@@ -30,44 +30,61 @@ I hope you will Enjoy using my commands....
 
 🎊 *FUN* 🎊
 
-🔖 ғᴀᴄᴛ        🔖 ǫᴜᴏᴛᴇ
-🔖 ғǫᴜᴏᴛᴇ      🔖 ᴡʜʏ
-🔖 ᴊᴏᴋᴇ        🔖 ᴛʀɪɢɢᴇʀ
+🔖 ғᴀᴄᴛ  
+🔖 ǫᴜᴏᴛᴇ
+🔖 ғǫᴜᴏᴛᴇ      
+🔖 ᴡʜʏ
+🔖 ᴊᴏᴋᴇ        
+🔖 ᴛʀɪɢɢᴇʀ
 
 ⛩️ *WEEB* ⛩️
 
-🏷️ᴡᴀɪғᴜ            🏷️ ɴᴇᴋᴏ
-🏷️ ᴀɴɪᴍᴇ-ʟɪɴᴇ      🏷️ ʟᴏʟɪ
-🏷️ ʀᴘᴀᴘᴇʀ          🏷️ ᴋɪᴛsᴜɴᴇ
+🏷️ᴡᴀɪғᴜ            
+🏷️ ɴᴇᴋᴏ
+🏷️ ᴀɴɪᴍᴇ-ʟɪɴᴇ      
+🏷️ ʟᴏʟɪ
+🏷️ ʀᴘᴀᴘᴇʀ          
+🏷️ ᴋɪᴛsᴜɴᴇ
 🏷️ ᴍᴇɢᴜᴍɪᴘᴀᴘᴇʀ
 🏷️ ʜᴜsʙᴀɴᴅʀᴏ
 🏷️ sʜɪɴᴏʙᴜ-ᴘᴀᴘᴇʀ
 
 🎐 *GENERAL* 🎐
 
-🔷 ᴀᴅᴍɪɴs         🔷 ᴅᴇʟᴇᴛᴇ
-🔷 ᴇᴠᴇʀʏᴏɴᴇ       🔷 ᴍᴏᴅs
-🔷 ᴘʀᴏғɪʟᴇ        🔷 xᴘ
+🔷 ᴀᴅᴍɪɴs         
+🔷 ᴅᴇʟᴇᴛᴇ
+🔷 ᴇᴠᴇʀʏᴏɴᴇ       
+🔷 ᴍᴏᴅs
+🔷 ᴘʀᴏғɪʟᴇ        
+🔷 xᴘ
 
 
 🎼 *MEDIA* 🎼
 
-🎶 ʟʏʀɪᴄs      🎶 sᴘᴏᴛɪғʏ
-🎶 ʏᴛᴀ         🎶 ʏᴛᴠ
-🎶 ʏᴛs         🎶 ᴘʟᴀʏ
+🎶 ʟʏʀɪᴄs      
+🎶 sᴘᴏᴛɪғʏ
+🎶 ʏᴛᴀ         
+🎶 ʏᴛᴠ
+🎶 ʏᴛs         
+🎶 ᴘʟᴀʏ
 🎶 ᴘʟᴀʏᴠ
 
 📃 *MISC* 📃
 
-⛓️ ʜɪ          ⛓️ ʀᴇᴛʀɪᴇᴠᴇ
+⛓️ ʜɪ          
+⛓️ ʀᴇᴛʀɪᴇᴠᴇ
 ⛓️ ᴠᴏɪᴅ      
 
 📯 *MODERATION* 📯
 
-📍ᴀᴄᴛɪᴠᴀᴛᴇ      📍ᴄʟᴏsᴇ
-📍ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇ    📍ᴏᴘᴇɴ
-📍ᴅᴇᴍᴏᴛᴇ        📍ᴘᴜʀɢᴇ
-📍ᴘʀᴏᴍᴏᴛᴇ       📍ʀᴇᴍᴏᴠᴇ
+📍ᴀᴄᴛɪᴠᴀᴛᴇ     
+📍ᴄʟᴏsᴇ
+📍ᴅᴇᴀᴄᴛɪᴠᴀᴛᴇ   
+📍ᴏᴘᴇɴ
+📍ᴅᴇᴍᴏᴛᴇ        
+📍ᴘᴜʀɢᴇ
+📍ᴘʀᴏᴍᴏᴛᴇ       
+📍ʀᴇᴍᴏᴠᴇ
 
 ⚠️ *NSFW* ⚠️
 
@@ -93,8 +110,10 @@ I hope you will Enjoy using my commands....
 
 🪦 *UTILS* 🪦
 
-⏳ ʙʟᴜʀ    ⏳ sᴛɪᴄᴋᴇʀ
-⏳ sᴛᴇᴀʟ   ⏳ sᴜʙʀᴇᴅ
+⏳ ʙʟᴜʀ    
+⏳ sᴛɪᴄᴋᴇʀ
+⏳ sᴛᴇᴀʟ   
+⏳ sᴜʙʀᴇᴅ
 
 📧 *NOTE*  📧
 
