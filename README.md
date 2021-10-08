@@ -1,5 +1,5 @@
 <div align="center">
-<a href="https://ibb.co/wQ4GK21"><img src="https://images6.alphacoders.com/931/931215.png" alt="whatsapp-botto-void-init" border="0"></a>
+<a href="https://ibb.co/wQ4GK21"><img src="https://64.media.tumblr.com/1427550a0324e13af28d7a5a77ce4d80/667eeed573cb3cb9-46/s250x400/52c6dfb3d53811ea633fa9c5343457461d3daf87.gifv" alt="whatsapp-botto-void-init" border="0"></a>
 
 # **Ichigo-Botto**
 [![CodeFactor](https://www.codefactor.io/repository/github/prajjwaldatir/kaoi/badge)](https://www.codefactor.io/repository/github/prajjwaldatir/kaoi)
