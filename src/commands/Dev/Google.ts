@@ -10,16 +10,19 @@ export default class Command extends BaseCommand {
             command: 'google',
             aliases: ['g', 'search'],
             description: 'Search on the web ',
-            category: 'dev',
+            category: 'general',
             dm: true,
             usage: `${client.config.prefix}google [query]`
         })
     }
-
+    // static count = 0
     run = async (M: ISimplifiedMessage, { joined }: IParsedArgs): Promise<void> => {
-        if (!this.client.config.mods?.includes(M.sender.jid)) return void null
+        // Adds mod check
+        // if (!this.client.config.mods?.includes(M.sender.jid)) return void null
         if (!this.client.config.gkey) return void null
         if (!joined) return void M.reply('🔎 Provide a search term')
+        // if (Command.count > 75) return void M.reply('🔎 Search limit reached')
+        // Command.count += 1
         const term = joined.trim()
         await axios
             .get(
@@ -31,10 +34,11 @@ export default class Command extends BaseCommand {
                 let result = ``
                 let index = 1
                 for (const item of res.data?.items) {
-                    result += `*👾${index}.Title* : ${item.title}\n*🔗Link* : ${item.link}\n*📖Snippet* : ${item.snippet}\n\n`
+                    result += `*🌟${index}.Title* : ${item.title}\n*🔗Link* : ${item.link}\n*📖Snippet* : ${item.snippet}\n\n`
                     index++
                 }
-                return void M.reply(`🔍Result for *${term}*\n\n\n ${result}`)
+                // return void M.reply(`🔍Command Used : ${Command.count} times\n Result for *${term}*\n\n\n ${result}`)
+                return void M.reply(`🔍 Result for *${term}*\n\n\n ${result}`)
             })
             .catch((err) => {
                 M.reply(`🔍 Error: ${err}`)
