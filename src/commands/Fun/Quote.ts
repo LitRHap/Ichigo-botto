@@ -17,9 +17,8 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-    MessageType.buttonsMessage  = (type === 'conversation') ? M.message.conversation : (type === 'buttonsMessage') ? M.message.extendedTextMessage.text : ''
-     const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
-     MessageType.buttonsMessage = command
+    MessageType.buttonsMessage  = (type === 'conversation') ? M.ISimplifiedMessage.conversation : (type === 'buttonsMessage') ? M.ISimplifiedMessage.extendedTextMessage.text : ''
+  
         await axios
             .get(`https://api.quotable.io/random`)
             .then((response) => {
@@ -33,7 +32,7 @@ export default class Command extends BaseCommand {
       buttons: buttonsk,
       headerType:1
                 }
-                return void this.client.sendMessage(M.from,text,buttonsk,MessageType.buttonMessage,{quoted:M.WAMessage})
+                return void this.client.sendMessage(M.from,text,buttonsk,MessageType.buttonsMessage,{quoted:M.WAMessage})
             })
             .catch((err) => {
                 M.reply(`🔍 Error: ${err}`)
