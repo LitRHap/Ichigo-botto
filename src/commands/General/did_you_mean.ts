@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
             './assets/images/ichi/nezuko.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
-        return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
+        return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage
             mimetype: Mimetype.gif,
             caption: `Do you mean *${this.client.config.prefix}help*? \n`}
         )
