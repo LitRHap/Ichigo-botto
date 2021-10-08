@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
         const groupMembers = isGroup ? groupMetadata.participants : ''
         const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
         const mentions = (teks, memberr, id) => {
-        (id == null || id == undefined || id == false) ? return void this.client.sendMessage(M.from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) :  return void this.client.sendMessage(M.from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": memberr}});
+        (id == null || id == undefined || id == false) ? return void this.client.sendMessage(M.from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : void this.client.sendMessage(M.from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": memberr}});
       }
         if (args.length < 1) return M.reply(M.from,':pick @_', {quoted:M.WAMessage});
                      var membr = []
