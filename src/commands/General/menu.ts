@@ -57,7 +57,7 @@ I hope you will Enjoy using my commands....
 🔷 ᴍᴏᴅs
 🔷 ᴘʀᴏғɪʟᴇ        
 🔷 xᴘ
-
+🔷 Google
 
 🎼 *MEDIA* 🎼
 
@@ -96,19 +96,32 @@ I hope you will Enjoy using my commands....
 
 🎭 *REACTIONS* 🎭
 
-🎗️ ʙɪᴛᴇ        🎗️ ʜɪɢʜғɪᴠᴇ
-🎗️ ʙʟᴜsʜ       🎗️ sᴍᴜɢ
-🎗️ ʙᴏɴᴋ        🎗️ ʜᴜɢ
-🎗️ ʙᴜʟʟʏ       🎗️ ᴋɪᴄᴋ
-🎗️ ᴄʀɪɴɢᴇ      🎗️ ᴋɪʟʟ
-🎗️ ᴄʀʏ         🎗️ ᴋɪss
-🎗️ ᴄᴜᴅᴅʟᴇ      🎗️ ʟɪᴄᴋ
-🎗️ ᴅᴀɴᴄᴇ       🎗️ ᴘᴀᴛ
-🎗️ ᴇᴀᴛ         🎗️ ᴘᴏᴋᴇ
-🎗️ ʜᴀɴᴅʜᴏʟᴅ    🎗️ sʟᴀᴘ
-🎗️ ʜᴀᴘᴘʏ       🎗️ sᴍɪʟᴇ
-🎗️ ᴜʟᴛʀᴀʜᴜɢ    🎗️ ᴡᴀᴠᴇ
-🎗️ ᴡɪɴᴋ        🎗️ ʏᴇᴇᴛ
+🎗️ ʙɪᴛᴇ        
+🎗️ ʜɪɢʜғɪᴠᴇ
+🎗️ ʙʟᴜsʜ       
+🎗️ sᴍᴜɢ
+🎗️ ʙᴏɴᴋ        
+🎗️ ʜᴜɢ
+🎗️ ʙᴜʟʟʏ       
+🎗️ ᴋɪᴄᴋ
+🎗️ ᴄʀɪɴɢᴇ      
+🎗️ ᴋɪʟʟ
+🎗️ ᴄʀʏ         
+🎗️ ᴋɪss
+🎗️ ᴄᴜᴅᴅʟᴇ      
+🎗️ ʟɪᴄᴋ
+🎗️ ᴅᴀɴᴄᴇ       
+🎗️ ᴘᴀᴛ
+🎗️ ᴇᴀᴛ         
+🎗️ ᴘᴏᴋᴇ
+🎗️ ʜᴀɴᴅʜᴏʟᴅ    
+🎗️ sʟᴀᴘ
+🎗️ ʜᴀᴘᴘʏ       
+🎗️ sᴍɪʟᴇ
+🎗️ ᴜʟᴛʀᴀʜᴜɢ    
+🎗️ ᴡᴀᴠᴇ
+🎗️ ᴡɪɴᴋ        
+🎗️ ʏᴇᴇᴛ
 
 🪦 *UTILS* 🪦
 
@@ -124,7 +137,7 @@ Use =help <command_name> to view the command info
 
 𝐈𝐜𝐡𝐢𝐠𝐨-𝐁𝐨𝐭𝐭𝐨 ©
 `
-        return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {
+        return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage
             mimetype: Mimetype.gif,
             caption:mn }
         )
