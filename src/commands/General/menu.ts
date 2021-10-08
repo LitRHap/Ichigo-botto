@@ -58,7 +58,6 @@ I hope you will Enjoy using my commands....
 🔷 ᴘʀᴏғɪʟᴇ        
 🔷 xᴘ
 🔷 ɢᴏᴏɢʟᴇ
-🔷 ᴡɪᴋɪ
 
 🎼 *MEDIA* 🎼
 
