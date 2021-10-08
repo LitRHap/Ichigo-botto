@@ -89,9 +89,9 @@ I hope you will Enjoy using my commands....
 ⚠️ *NSFW* ⚠️
 
 🀄 ʙʟᴏᴡᴊᴏʙ    
-🀄ɴsғᴡᴊᴏᴋᴇ
+🀄 ɴsғᴡᴊᴏᴋᴇ
 🀄 ɴsғᴡ-ɴᴇᴋᴏ  
-🀄ᴛʀᴀᴘ
+🀄 ᴛʀᴀᴘ
 🀄 ɴsғᴡ-ᴡᴀɪғᴜ
 
 🎭 *REACTIONS* 🎭
