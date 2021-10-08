@@ -17,7 +17,7 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-     const  MessageType.buttonsMessage  = (type === 'conversation') ? M.message.conversation : (type === 'buttonsMessage') ? M.message.extendedTextMessage.text : ''
+    MessageType.buttonsMessage  = (type === 'conversation') ? M.message.conversation : (type === 'buttonsMessage') ? M.message.extendedTextMessage.text : ''
      const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
      MessageType.buttonsMessage = command
         await axios
