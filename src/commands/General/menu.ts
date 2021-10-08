@@ -57,8 +57,8 @@ I hope you will Enjoy using my commands....
 🔷 ᴍᴏᴅs
 🔷 ᴘʀᴏғɪʟᴇ        
 🔷 xᴘ
-🔷 Google
-
+🔷 ɢᴏᴏɢʟᴇ
+🔷 ᴡɪᴋɪ
 🎼 *MEDIA* 🎼
 
 🎶 ʟʏʀɪᴄs      
