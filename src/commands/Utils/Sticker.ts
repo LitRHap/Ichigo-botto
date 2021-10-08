@@ -78,7 +78,7 @@ export default class Command extends BaseCommand {
             })()
             return {
                 categories,
-                pack: pack[1] || 'Ichigo Bot ',
+                pack: pack[1] || 'Ichigo-Botto©',
                 author: pack[2] || 'Pratyush',
                 quality,
                 type: StickerTypes[
