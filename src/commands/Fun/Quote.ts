@@ -27,7 +27,7 @@ export default class Command extends BaseCommand {
                 const buttonsk = [
     {buttonId: '${this.client.config.prefix}why', buttonText: {displayText: ':next'}, type: 1}]
                 const buttonMessagek = {
-      contentText: text
+      contentText: text,
       footerText: 'Ichigo-botto',
       buttons: buttonsk,
       headerType:1
