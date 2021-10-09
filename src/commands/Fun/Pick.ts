@@ -16,9 +16,10 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-           var arg=args.join(' ');
+           if(!joined) return M.reply('What do you want to pick')
+           const term = joined.trim()
             const pi= groupMetadata?.participants.map(user)
-            const pic=pi.math.random(
+            const pic=pi.math.random(pi
         return void (await M.reply(
             `${M.groupMetadata?.subject || 'EVERYONE'}\n*[TAGS HIDDEN]*`,
             undefined,
