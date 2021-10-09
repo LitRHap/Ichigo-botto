@@ -19,12 +19,9 @@ export default class Command extends BaseCommand {
            if(!joined) return M.reply('What do you want to pick')
            const term = joined.trim()
             const pi= groupMetadata?.participants.map(user)
-            const pic=pi.math.random(pi
-        return void (await M.reply(
-            `${M.groupMetadata?.subject || 'EVERYONE'}\n*[TAGS HIDDEN]*`,
-            undefined,
-            undefined,
-            M.groupMetadata?.participants.map((user) => user.jid)
-        ).catch((reason: any) => M.reply(`an error occupered, Reason: ${reason}`)))
+            ]
+        let chitoge = pi[Math.floor(Math.random() * pi.length)]
+        const capt=`${term}: ${chitoge}`
+        return M.reply(capt).catch((reason: any) => M.reply(`an error occupered, Reason: ${reason}`)))
     }
 }
