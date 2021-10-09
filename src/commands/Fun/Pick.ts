@@ -22,6 +22,6 @@ export default class Command extends BaseCommand {
             ]
         let chitoge = pi[Math.floor(Math.random() * pi.length)]
         const capt=`${term}: ${chitoge}`
-        return M.reply(capt).catch((reason: any) => M.reply(`an error occupered, Reason: ${reason}`)))
+        return M.reply(capt)
     }
 }
