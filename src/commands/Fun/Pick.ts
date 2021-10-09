@@ -18,7 +18,7 @@ export default class Command extends BaseCommand {
     run = async (M: ISimplifiedMessage): Promise<void> => {
            if(!joined) return M.reply('What do you want to pick')
            const term = joined.trim()
-            const pi= groupMetadata?.participants.map(user)
+            const pi= M.groupMetadata?.participants.map(user)
             ]
         let chitoge = pi[Math.floor(Math.random() * pi.length)]
         const capt=`${term}: ${chitoge}`
