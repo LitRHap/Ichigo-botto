@@ -13,7 +13,7 @@ export default class WAClient extends Base {
     assets = new Map<string, Buffer>()
     constructor(public config: IConfig) {
         super()
-        this.browserDescription[0] = 'WhatsApp-Botto-Void'
+        this.browserDescription[0] = 'Pratyush-Ichigo-botto'
         this.logger.level = 'fatal'
 
         this.on('chat-update', (update) => {
