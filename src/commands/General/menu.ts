@@ -18,11 +18,11 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/images/ichi/arin.mp4'
+            './assets/images/ichi/ichigo.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         const mn=`
-🪆Konichiwa! *${M.sender.username}* , I'm *Mizuhara-botto*
+🪆Konichiwa! *${M.sender.username}* , I'm *Ichigo-botto*
 
 *Enjoy using my commands....*
 
