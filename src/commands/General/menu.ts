@@ -18,11 +18,11 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
         const n = [
-            './assets/images/ichi/ichigo.mp4'
+            './assets/images/ichi/arin.mp4'
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         const mn=`
-🪆Konichiwa! *${M.sender.username}* , I'm *Ichigo-botto*
+🪆Konichiwa! *${M.sender.username}* , I'm *Mai San*
 
 *Enjoy using my commands....*
 
@@ -134,7 +134,7 @@ export default class Command extends BaseCommand {
 Use =help <command_name> to view the command info
  
 
-𝐈𝐜𝐡𝐢𝐠𝐨-𝐁𝐨𝐭𝐭𝐨©~MarSH
+𝐈𝐜𝐡𝐢𝐠𝐨-𝐁𝐨𝐭𝐭𝐨©~Arin
 `
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
