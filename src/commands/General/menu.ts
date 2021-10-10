@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         const mn=`
-🪆Konichiwa! *${M.sender.username}* , I'm *Mai San*
+🪆Konichiwa! *${M.sender.username}* , I'm *Mizuhara-botto*
 
 *Enjoy using my commands....*
 
