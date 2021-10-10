@@ -19,7 +19,6 @@ export default class Command extends BaseCommand {
            if(!joined) return M.reply('What do you want to pick')
            const term = joined.trim()
             const pi= M.groupMetadata?.participants.map(user)
-            ]
         let chitoge = pi[Math.floor(Math.random() * pi.length)]
         const capt=`${term}: ${chitoge}`
         return M.reply(capt)
