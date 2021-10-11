@@ -68,7 +68,7 @@ export default class Command extends BaseCommand {
 
                 for (const item of res.data?.items) {
 
-                    result += `*🌟${index}.Title* : ${item.title}\n*🔗Link* : ${item.link}\n*📖Snippet* : ${item.snippet}\n\n`
+                    result += `*🍥${index}.Title* : ${item.title}\n*🔗Link* : ${item.link}\n*📖Snippet* : ${item.snippet}\n\n`
 
                     index++
 
@@ -76,7 +76,14 @@ export default class Command extends BaseCommand {
 
                 // return void M.reply(`🔍Command Used : ${Command.count} times\n Result for *${term}*\n\n\n ${result}`)
 
-                return void M.reply(`🔍 Result for *${term}*\n\n\n ${result}`)
+                return void this.client.sendMessage(M.from,`🔍 Result for *${term}*\n\n\n ${result}`,MessageType.text,{quoted:M.WAMesssage,contextInfo: {
+    externalAdReply: {
+           title:`Google search-${term}`,
+          body: `searched by Pratyush`,
+         thumbnailUrl: `https://64.media.tumblr.com/1beaebc66d9be0d12231cb7e886855ad/e05ed8993097dd72-a6/s500x750/734cb50014b3280edc8bdcb15f42322edd55b067.jpg`,
+        
+    }
+}})
 
             })
 
