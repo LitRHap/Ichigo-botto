@@ -22,7 +22,7 @@ export default class Command extends BaseCommand {
         ]
         let chitoge = n[Math.floor(Math.random() * n.length)]
         const mn=`
-🪆Konichiwa! *${M.sender.username}* , I'm *Mizuhara-botto*
+🪆Konichiwa! *${M.sender.username}* , I'm *Ichigo-botto*
 
 *Enjoy using my commands....*
 
@@ -129,12 +129,10 @@ export default class Command extends BaseCommand {
 ⏳ sᴛᴇᴀʟ   
 ⏳ sᴜʙʀᴇᴅ
 
-📧 *NOTE*  📧
 
-Use =help <command_name> to view the command info
  
 
-𝐈𝐜𝐡𝐢𝐠𝐨-𝐁𝐨𝐭𝐭𝐨©~Arin
+𝐈𝐜𝐡𝐢𝐠𝐨-𝐁𝐨𝐭𝐭𝐨©
 `
         return void this.client.sendMessage(M.from, { url: chitoge }, MessageType.video, {quoted:M.WAMessage,
             mimetype: Mimetype.gif,
